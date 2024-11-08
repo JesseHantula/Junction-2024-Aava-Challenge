@@ -1,0 +1,9 @@
+services:
+  app:
+    container_name: secret-app
+    build: .
+    command: bash -c "python manage.py makemigrations && python manage.py migrate && python manage.py runserver 0.0.0.0:8000"
+    volumes:
+      - ./:/usr/src/secret-app
+    ports:
+      - "8000:8000"

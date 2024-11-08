@@ -1,0 +1,19 @@
+# frontend
+node_modules/
+.expo/
+ios/
+android/
+artifacts/
+
+# macOS
+.DS_Store
+
+# backend
+pycache
+db.sqlite3 
+.venv 
+env/ 
+venv/
+
+# general
+.env
